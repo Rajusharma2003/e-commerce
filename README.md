@@ -40,3 +40,9 @@ npm i -D postcss autoprefixer
 ```
  npx tailwindcss init -p
  ```
+
+### Add carousel using (`react alice carousel`).
+
+```
+npm i react-alice-carousel
+```

@@ -1,16 +1,20 @@
 import './App.css'
 import Navigation from './customers/components/Navigation/Navigation'
+import HomePage from './customers/pages/HomePage/HomePage'
 
 function App() {
 
   return (
-    <div className="">
+
+    // This is for navigation bar.
+   <div className="">
       <Navigation/>
 
+    {/* This is for carousle */}
       <div>
-    hello ecommerce 
+       <HomePage/>
+       {/* home  */}
     </div>
-
     </div>
     
   )
