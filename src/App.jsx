@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './customers/components/Footer/Footer'
 import Navigation from './customers/components/Navigation/Navigation'
 import HomePage from './customers/pages/HomePage/HomePage'
 
@@ -15,6 +16,13 @@ function App() {
        <HomePage/>
        {/* home  */}
     </div>
+
+
+      <div>
+       <Footer/>
+    </div>
+
+
     </div>
     
   )

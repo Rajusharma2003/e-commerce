@@ -6,7 +6,7 @@ This project is built with Node.js and other modern web technologies.
 
 ### MUI Setup
 
-To install the MUI package and icons, use the following commands:
+To install the MUI package and Icons, use the following commands:
 
 ```bash
 npm install @mui/material @emotion/react @emotion/styled

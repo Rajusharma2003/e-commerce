@@ -4,7 +4,8 @@ import AliceCarousel from "react-alice-carousel";
 import HomeSectionCard from "../HomeSectionCard/HomeSectionCard";
 import { useRef } from "react";
 
-const HomeSectionDetails = ({data}) => {
+const HomeSectionDetails = ({data , sectionName}) => {
+
   const carouselRef = useRef(null);
 
   const responsive = {
@@ -31,6 +32,8 @@ const HomeSectionDetails = ({data}) => {
 
   return (
     <div className="relative px-4 lg:px-8 ml-20">
+      {/* This is the heading */}
+      <h1 className='text-2xl font-extrabold text-gray-800 py-5'>{sectionName}</h1>
       <AliceCarousel
         ref={carouselRef}
         items={items}
