@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <div>
         {/* this is the main carousel */}
-        <MainCarousel/>
+        {/* <MainCarousel/> */}
 
         {/*This is for the product details carousel  */}
         <div>

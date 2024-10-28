@@ -1,0 +1,136 @@
+/* eslint-disable no-unused-vars */
+import { Box, Button, Grid, TextField } from '@mui/material'
+import React from 'react'
+import AddressCard from '../AddressCard/AddressCard'
+
+const DeliveryAddressForm = () => { 
+
+    // This is the funtion for submit button.
+    const handlesubmit=(e) => {
+        e.preventDefault();
+       
+        const data = new FormData(e.currentTarget)
+
+        const address = {
+            firstName : data.get("firstName"),
+            lastName : data.get("lastName"),
+            streetAddress : data.get('address'),
+            city : data.get('city'),
+            state : data.get('state'),
+            zipCode : data.get('zip'),
+            mobileData : data.get('phoneNumber'),
+
+        }
+
+        console.log('address' , address)  
+      }
+
+
+  return (
+    <div>
+        <Grid container spacing={4}>
+            <Grid xs={12} lg={5} className='border rounded-md shadow-sm h-[30.5rem] overflow-y-scroll'>
+
+                <div className="p-5 py-7 border-b cursor-pointer">
+                    {/* This is imported from AddressCard */}
+                    <AddressCard/>
+                    <Button sx={{mt:2 , bgcolor:'RGB(145 85 253)'}} size='large' variant='contained'>Delivery here</Button>
+                </div>
+
+            </Grid>
+
+            {/* This is the form */}
+            <Grid item xs={12} lg={7}>
+                <Box className="border rounded-md shadow-md p-5">
+                    <form onSubmit={handlesubmit}>
+                        <Grid container spacing={3}>
+
+                            {/* First name */}
+                            <Grid item xs={12} sm={6}>
+                                <TextField 
+                                required id='firstName'
+                                name='firstName'
+                                label="First Name"
+                                fullWidth
+                                autoComplete='given-name'
+                                />
+                            </Grid>
+
+                            {/* last name */}
+                            <Grid item xs={12} sm={6}>
+                                <TextField 
+                                required id='lastName'
+                                name='lastName'
+                                label="Last Name"
+                                fullWidth
+                                autoComplete='given-name'
+                                />
+                            </Grid>
+                            {/* Address*/}
+                            <Grid item xs={12} >
+                                <TextField 
+                                required id='address'
+                                name='address'
+                                label="address"
+                                fullWidth
+                                multiline
+                                rows={4}
+                                autoComplete='given-name'
+                                />
+                            </Grid>
+                            {/* state */}
+                            <Grid item xs={12} sm={6}>
+                                <TextField 
+                                required id='city'
+                                name='city'
+                                label="city"
+                                fullWidth
+                                autoComplete='given-name'
+                                />
+                            </Grid>
+                          
+                            {/* state  */}
+                            <Grid item xs={12} sm={6}>
+                                <TextField 
+                                required id='state'
+                                name='state'
+                                label="state/province/Region"
+                                fullWidth
+                                autoComplete='given-name'
+                                />
+                            </Grid>
+                            {/* state  */}
+                            <Grid item xs={12} sm={6}>
+                                <TextField 
+                                required id='zip'
+                                name='zip'
+                                label="zip / postal code"
+                                fullWidth
+                                autoComplete='shipping postal-code'
+                                />
+                            </Grid>
+                            {/* state  */}
+                            <Grid item xs={12} sm={6}>
+                                <TextField 
+                                required id='phoneNumber'
+                                name='phoneNumber'
+                                label="phone Number"
+                                fullWidth
+                                autoComplete='given-name'
+                                />
+                            </Grid>
+                            {/* button   */}
+                            <Grid item xs={12} sm={6}>
+                            <Button sx={{mt:2 , bgcolor:'RGB(145 85 253)'}} size='large' variant='contained' type='submit'>Delivery here</Button>
+                            </Grid>
+
+                        </Grid>
+                    </form>
+                </Box>
+            </Grid>
+        </Grid>
+    </div>
+  )
+}
+
+export default DeliveryAddressForm

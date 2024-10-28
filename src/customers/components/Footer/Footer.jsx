@@ -1,110 +1,61 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unknown-property */
 import React from 'react'
-import {Grid, Typography} from '@mui/material'
-import { Link } from 'react-alice-carousel'
-
 
 const Footer = () => {
   return (
-    <div>
+    <div className="bg-black text-white mt-10 py-10">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        {/* Company Section */}
+        <div className="flex flex-col items-center min-h-full">
+          <h6 className="text-lg font-semibold mb-5 text-center">Company</h6>
+          <button className="block mb-2">About</button>
+          <button className="block mb-2">Blog</button>
+          <button className="block mb-2">Press</button>
+          <button className="block mb-2">Jobs</button>
+          <button className="block mb-2">Partners</button>
+        </div>
 
-        <Grid className='bg-black text-white text-center mt-10'
-        container
-        sx={{bgcolor : "black" , color : "white" , py : 3}}
-        >
+        {/* Solution Section */}
+        <div className="flex flex-col items-center min-h-full">
+          <h6 className="text-lg font-semibold mb-5 text-center">Solution</h6>
+          <button className="block mb-2">Marketing</button>
+          <button className="block mb-2">Analytics</button>
+          <button className="block mb-2">Commerce</button>
+          <button className="block mb-2">Insights</button>
+          <button className="block mb-2">Supports</button>
+        </div>
 
-            <Grid item >
-                <Typography className='pb-5' variant='6'> Company </Typography>
-                <div> 
-                <button className='pb-5' variant='6'> About </button>
-                </div>
-                <div>
-                <button className='pb-5' variant='6'> Blog </button>
-                </div>
-                <div>
-                <button className='pb-5' variant='6'> Press </button>
-                </div>
-                <div>
-                <button className='pb-5' variant='6'> Jobs </button>
-                </div>
-                <div>
-                <button className='pb-5' variant='6'> Partners </button>
-                </div>
-            </Grid>
+        {/* Documentation Section */}
+        <div className="flex flex-col items-center min-h-full">
+          <h6 className="text-lg font-semibold mb-5 text-center">Documentation</h6>
+          <button className="block mb-2">Guides</button>
+          <button className="block mb-2">API Status</button>
+        </div>
 
-            {/* This is other section */}
-            <Grid item >
-                <Typography className='pb-5' variant='6'> Solution </Typography>
-                <div> 
-                <button className='pb-5' variant='6'> Markerting </button>
-                </div>
-                <div>
-                <button className='pb-5' variant='6'> Analytics </button>
-                </div>
-                <div>
-                <button className='pb-5' variant='6'> Commerce </button>
-                </div>
-                <div>
-                <button className='pb-5' variant='6'> Insights </button>
-                </div>
-                <div>
-                <button className='pb-5' variant='6'> Supports </button>
-                </div>
-            </Grid>
+          {/* Legal Section */}
+          <div className="flex flex-col items-center min-h-full">
+          <h6 className="text-lg font-semibold mb-5">Legal</h6>
+          <button className="block mb-2">Claim</button>
+          <button className="block mb-2">Privacy</button>
+          <button className="block mb-2">Terms</button>
+        </div>
+      </div>
 
-            {/* This is other section */}
-            <Grid item >
-                <Typography className='pb-5' variant='6'> Documentations </Typography>
-                <div> 
-                <button className='pb-5' variant='6'> Guides </button>
-                </div>
-                <div>
-                <button className='pb-5' variant='6'> Api Status </button>
-                </div>
-               
-            </Grid>
-
-            {/* This is other section */}
-            <Grid item >
-                <Typography className='pb-5' variant='6'> Legal </Typography>
-                <div> 
-                <button className='pb-5' variant='6'> Claim </button>
-                </div>
-                <div>
-                <button className='pb-5' variant='6'> privacy </button>
-                </div>
-                <div>
-                <button className='pb-5' variant='6'> Terms </button>
-                </div>
-               
-            </Grid>
-
-            {/* This is the last section of the footer */}
-             <Grid className=' pt-20' item>
-
-                <Typography variant='body2' component="p" align='center'>
-                    &copy; 2023 My Company. All Right reserved.
-                </Typography>
-                <Typography variant='body2' component="p" align='center'>
-                    Made With Love By Me
-                </Typography>
-                <Typography variant='body2' component="p" align='center'>
-                    Icon Made By{ ' '}
-                    <Link href='freepick.com' color='inherit' underline='always'>
-                    FreePik
-                    </Link>
-                    <Link href='flaticon.com' color='inherit' underline='always'>
-                    www.flaticon.com
-                    </Link>
-                </Typography>
-
-             </Grid>
-
-
-        </Grid>
-
-        
+      {/* Footer Bottom Section */}
+      <div className="text-center mt-10">
+        <p>&copy; 2023 My Company. All Rights Reserved.</p>
+        <p>Made With Love By Me</p>
+        <p>
+          Icons made by{' '}
+          <a href="https://www.freepik.com" className="underline">
+            FreePik
+          </a>{' '}
+          from{' '}
+          <a href="https://www.flaticon.com" className="underline">
+            www.flaticon.com
+          </a>
+        </p>
+      </div>
     </div>
   )
 }

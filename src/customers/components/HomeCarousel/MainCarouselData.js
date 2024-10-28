@@ -1,25 +1,22 @@
  export const MainCarouselData = [
 
     {
-        image : "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/14d5f677630559.5c8d3005a7c9c.png"
+        image : "https://smartwaylighting.com/cdn/shop/files/image58_1512x.png?v=1721738552"
     },
     {
-        image : "https://lh3.googleusercontent.com/proxy/AxYHXM5kLT8x-eI-SCOT43mL-GBQPg1AZaGAOxCnV4Mh1Q-qvvCGXWtu6qNoRD2d7AbUhNt30WEQxHpcsuNbMtch36v0eXB0irYfBd3ibJUmFg"
+        image : "https://smartwaylighting.com/cdn/shop/files/g233_1512x.png?v=1721738394"
     },
-    {
-        image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8Tebr8fPVovutYQx1IRgzAdZf1l6z4B1t2zPwHFuVikfzIDdatJpbcY5kHxzW_Rnn6k&usqp=CAU"
-    },
-    {
-        image : "https://images.pexels.com/photos/908929/pexels-photo-908929.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-        image : "https://images.pexels.com/photos/985685/pexels-photo-985685.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-        image : "https://images.pexels.com/photos/1162983/pexels-photo-1162983.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-        image : "https://images.pexels.com/photos/859191/pexels-photo-859191.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-
+    // {
+    //     image : "https://img.freepik.com/free-vector/flat-black-friday-twitch-cover_23-2149103021.jpg?uid=R163215126&ga=GA1.1.332943406.1726205077&semt=ais_hybrid"
+    // },
+    // {
+    //     image : "https://img.freepik.com/free-vector/flat-design-fashion-boutique-twitter-header_23-2149314981.jpg?uid=R163215126&ga=GA1.1.332943406.1726205077&semt=ais_hybrid"
+    // },
+    // {
+    //     image : "https://img.freepik.com/free-vector/gradient-boutique-twitch-banner_23-2149334951.jpg?uid=R163215126&ga=GA1.1.332943406.1726205077&semt=ais_hybrid"
+    // },
+    // {
+    //     image : "https://img.freepik.com/free-vector/flat-design-fashion-collection-twitter-header_23-2149953836.jpg?uid=R163215126&ga=GA1.1.332943406.1726205077&semt=ais_hybrid"
+    // },
+    
  ]
